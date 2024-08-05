@@ -36,7 +36,6 @@ void InterchangeSort(T a[], int n) {
 }
 
 
-
 // 2. Xuất các phần tử mà từng chữ số của nó là số lẻ.
 int KiemTraChuSoLe(int num) {
     while (num > 0) {
@@ -61,7 +60,7 @@ void XuatPhanTuChuSoLe(int a[], int n) {
 
 
 
-// 4  Kiểm tra mảng có toàn là số chẵn không?
+//4  Kiểm tra mảng có toàn là số chẵn không?
 int KiemTraMangToanChan(int a[], int n) {
     for (int i = 0; i < n; i++) {
         if (a[i] % 2 != 0) {
@@ -82,7 +81,6 @@ int KiemTraMangDoiXung(int a[], int n) {
     }
     return 1; // Nếu tất cả đều đối xứng, return true
 }
-
 
 
 
@@ -108,7 +106,6 @@ int main() {
 
     
 
-   
     // 2. Sắp xếp mảng a giảm dần bằng Interchange Sort
     printf("Mang a sau khi sap xep giam dan: ");
     InterchangeSort(a, n);
@@ -129,7 +126,7 @@ int main() {
         printf("Mang khong toan so chan.\n");
     }
 
-    
+   
 
     // 2. Kiểm tra mảng đối xứng
     if (KiemTraMangDoiXung(a, n)) {
@@ -139,7 +136,6 @@ int main() {
         printf("Mang khong doi xung.\n");
     }
 
-  
 
     return 0;
 }
