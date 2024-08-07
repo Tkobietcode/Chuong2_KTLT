@@ -74,11 +74,11 @@ void demLoaiPhanTu(int mat[MAX][MAX], int m, int n) {
             if (kiemTraSoNguyenTo(abs(num))) nguyenTo++;
         }
     }
-    printf("Chẵn: %d\n", chan);
-    printf("Lẻ: %d\n", le);
-    printf("Dương: %d\n", duong);
-    printf("Âm: %d\n", am);
-    printf("Nguyên tố: %d\n", nguyenTo);
+    printf("Chan: %d\n", chan);
+    printf("Le: %d\n", le);
+    printf("Duong: %d\n", duong);
+    printf("Am: %d\n", am);
+    printf("Nguyen to: %d\n", nguyenTo);
 }
 
 int main() {
@@ -86,11 +86,11 @@ int main() {
     int m, n;
 
     // Nhập kích thước ma trận
-    printf("Nhập số hàng và số cột: ");
+    printf("Nhap so hang va so cot: ");
     scanf("%d %d", &m, &n);
 
     // Nhập giá trị ma trận
-    printf("Nhập các giá trị của ma trận:\n");
+    printf("Nhap cac gia tri cua ma tran:\n");
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
             scanf("%d", &mat[i][j]);
@@ -98,11 +98,11 @@ int main() {
     }
 
     // Thực hiện các bài toán
-    printf("Tổng các phần tử có chữ số đầu là chữ số lẻ: %d\n", tongChuSoDauLe(mat, m, n));
+    printf("Tong cac phan tu co chu so dau la chu so le: %d\n", tongChuSoDauLe(mat, m, n));
 
-    printf("Tổng các phần tử lớn hơn trị tuyệt đối của phần tử liền sau nó: %d\n", tongLonHonTriTuyetDoiSau(mat, m, n));
+    printf("Tong cac phan tu lon hon tri tuyet doi cua phan tu lien sau no: %d\n", tongLonHonTriTuyetDoiSau(mat, m, n));
 
-    printf("Tổng các phần tử nằm trên biên của ma trận: %d\n", tongBien(mat, m, n));
+    printf("Tong cac phan tu nam tren bien caa ma tran: %d\n", tongBien(mat, m, n));
 
     demLoaiPhanTu(mat, m, n);
 
